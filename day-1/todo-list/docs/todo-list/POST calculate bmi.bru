@@ -1,0 +1,18 @@
+meta {
+  name: POST calculate bmi
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/bmi
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "weight": "65",
+    "height":1.6
+  }
+}
