@@ -1,0 +1,18 @@
+meta {
+  name: POST health
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "text": "hello world",
+    "age":18
+  }
+}

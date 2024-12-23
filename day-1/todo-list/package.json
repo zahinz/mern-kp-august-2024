@@ -1,0 +1,16 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "This is a node js todo list api app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "author": "zahinz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
