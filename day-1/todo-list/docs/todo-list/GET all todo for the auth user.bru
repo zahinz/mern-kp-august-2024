@@ -1,0 +1,22 @@
+meta {
+  name: GET all todo for the auth user
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:8080/todo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM1MTM4NjU0fQ.A9OwKPr1FNxpdS3kBwG3l0fpxlmxmHVC3d-5tHLU-iU
+}
+
+body:json {
+  {
+    "email":"zahin@mail.com",
+    "password":"abcd1234"
+  }
+}

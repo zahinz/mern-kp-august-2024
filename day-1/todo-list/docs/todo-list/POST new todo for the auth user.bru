@@ -1,0 +1,22 @@
+meta {
+  name: POST new todo for the auth user
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8080/todo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM1MTM4NjU0fQ.A9OwKPr1FNxpdS3kBwG3l0fpxlmxmHVC3d-5tHLU-iU
+}
+
+body:json {
+  {
+    "title":"Learn React",
+    "description":"Study with Sidiq"
+  }
+}
